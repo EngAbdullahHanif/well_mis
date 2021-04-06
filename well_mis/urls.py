@@ -15,7 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import include
+
+from well import views  
+from django.conf.urls import url
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('advanced_filters', include('advanced_filters.urls')),
+    # url(r'^export-exl/$', views.export, name='export'),
+    # url(r'^export-csv/$', views.export, name='export'),
+    # url(r'^import/$', views.simple_upload, name='import'),
 ]
+
+
+ 

@@ -1,0 +1,3 @@
+pip install django-admin-rangefilter
+pip install django-advanced-filters
+pip install django-import_export
